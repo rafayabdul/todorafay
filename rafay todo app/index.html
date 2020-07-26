@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    
+</head>
+<style>
+    body{
+        background-color: rgb(91, 128, 36);
+        
+    }
+    #todoitem{
+        font-size: 20px;
+        border: 3px solid gray;
+        border-radius: 7px;
+        color: brown;
+    }
+    input{
+        background-color:greenyellow;
+        
+    }
+    #bt{
+        color: blueviolet;
+        background-color: gary;
+        font-size: 20px;
+        border: 3px solid gray;
+        border-radius: 7px;
+    }
+    #bt:hover{
+        background-color: greenyellow;
+        border: 3px solid gray;
+        border-radius: 7px;
+    }
+    button:hover{
+        background-color: violet;
+    }
+    
+    button{
+        color: blueviolet;
+        background-color: gary;
+        font-size: 15px;
+        margin-left: 2%;
+        border: 3px solid gray;
+        border-radius: 7px;
+    }
+   #list{
+       font-size: 25px;
+       background-color: rgb(40, 134, 56);
+       color: white;
+       
+   }
+   .head{
+       text-align: center;
+       font-size: 30px;
+       color: rgb(68, 66, 66);
+   }
+</style>
+
+
+<body>
+    <div class="head">
+        <h3>ToDo list <br>By Raf's Tech</h3>
+    </div>
+    <div>
+                <input type="text" placeholder="enter todo item" id="todoitem">
+            
+                <button onclick="task()" id="bt">Add Task</button>
+           
+            
+                <button onclick="deleteall()" id="bt">DeleteAll Task</button>
+           
+            </div>
+   <div>
+       <ol id="list">
+
+       </ol>
+   </div>
+
+
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
